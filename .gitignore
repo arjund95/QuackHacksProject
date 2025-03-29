@@ -1,8 +1,5 @@
 # Node nodules
 node_modules/
 
-#gpt api key
-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
-
 # package-lock.json
 package-lock.json
