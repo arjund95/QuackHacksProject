@@ -38,9 +38,8 @@
         <!-- Include Axios via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module">
-        // Function to make the OpenAI API request
         async function fetchCompletion(userMessage) {
-        const apiKey = 'YOUR API KEY HERE'; // Make sure you hide this securely if you ever deploy this code!!
+        const apiKey = process.env.OPENAI_API_KEY; 
         const url = 'https://api.openai.com/v1/chat/completions';
         const headers = {
             'Authorization': `Bearer ${apiKey}`,
