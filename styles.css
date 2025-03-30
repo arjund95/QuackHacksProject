@@ -14,7 +14,6 @@ body {
     font-size: 2.5em;
     margin-bottom: 20px;
     position: relative;
-    left: 2vh;
 
   }
   
@@ -54,16 +53,47 @@ body {
   } */
 
 
-#chat {
-    background-color: #3b3b3b;
-    position: absolute;
-    height: 100vh;
-    width: 30vw;
-    right: 70vw;
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-#chat_box {
+#chat {
+    background-color: #3b3b3b;
+    /* position: relative; */
+    /* height: 100vh; */
+    /* width: 30vw; */
+    flex-grow: .1;
+}
+
+#input {
     position: relative;
-    left: 2vh;
-    top: 70vh;
+    /* --inp_top: 70vh; */
+    /* top: var(--inp_top); */
+    top: 2vh;
+}
+
+
+
+#result {
+  resize: none;
+  background: transparent;
+  /* border-radius: 16px;
+  border-width: 2px; */
+  border: transparent;
+  width: 25vw;
+  height: 75vh;
+  overflow-y: scroll;
+  color:antiquewhite;
+  
+
+}
+
+#visual_area {
+  background-color: rgb(33, 33, 33);
+  /* width: 70vw; */
+  /* left: 30vw; */
+  flex-grow: 2;
+
 }
