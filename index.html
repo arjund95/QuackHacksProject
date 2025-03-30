@@ -31,13 +31,24 @@
             <div id="visual_area"> <!-- right hand side -->
                 <!-- <div class="container">
 
-                </div> -->
-            </div>
-        </div>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div> -->
+        </div> 
     
         <!-- Include Axios via CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module">
+         // DOM elements
+        const userInputElement = document.getElementById('user-input');
+        const fetchDataButton = document.getElementById('fetch-data');
+        const resultElement = document.getElementById('result');
         console.log("1");
 
         console.log("2");
@@ -57,28 +68,26 @@
             ]
         };
 
-        try {
-            const response = await axios.post(url, data, { headers });
-            console.log(response.data)
-            const result = response.data.choices[0].message.content;
-            resultElement.textContent = result;
-        } catch (error) {
-            console.error("Error fetching data:", error);
-            resultElement.textContent = "Error fetching data. Check console for details.";
-        }
+            try {
+                const response = await axios.post(url, data, { headers });
+                console.log(response.data)
+                const result = response.data.choices[0].message.content;
+                resultElement.textContent = result;
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                resultElement.textContent = "Error fetching data. Check console for details.";
+            }
         }
 
-        // DOM elements
-        const userInputElement = document.getElementById('user-input');
-        const fetchDataButton = document.getElementById('fetch-data');
-        const resultElement = document.getElementById('result');
+       
 
         // Event listener
         fetchDataButton.addEventListener('click', () => {
         const userInput = userInputElement.value;
         fetchCompletion(userInput);
         });
-    </script>
+    </script> -->
+    <script src="script.js" defer></script>
     </body>
     
     
