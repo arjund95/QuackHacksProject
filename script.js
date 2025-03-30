@@ -34,5 +34,5 @@ const resultElement = document.getElementById('result');
 // Event listener
 fetchDataButton.addEventListener('click', () => {
     const userInput = userInputElement.value;
-    fetchCompletion(usersInput);
+    fetchCompletion(userInput);
 });
