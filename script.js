@@ -33,6 +33,7 @@ const resultElement = document.getElementById('result');
 
 // Event listener
 fetchDataButton.addEventListener('click', () => {
+    console.log("click");
     const userInput = userInputElement.value;
     fetchCompletion(userInput);
 });
